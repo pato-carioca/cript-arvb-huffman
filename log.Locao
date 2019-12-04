@@ -1,0 +1,198 @@
+In file included from huff_cript.c:1,
+                 from main.c:2:
+huffman.c: In function ‘criah’:
+huffman.c:13:26: warning: passing argument 2 of ‘insereh_fim’ makes pointer from integer without a cast [-Wint-conversion]
+   13 |         insereh_fim(arv, let, m, cv, freq); // criando a lista base inicial
+      |                          ^~~
+      |                          |
+      |                          char
+In file included from huffman.c:1,
+                 from huff_cript.c:1,
+                 from main.c:2:
+huffman.h:11:8: note: expected ‘char *’ but argument is of type ‘char’
+   11 | THuff *insereh_fim(THuff *huff, char *c, char *m, char *cv, float f);
+      |        ^~~~~~~~~~~
+In file included from huff_cript.c:1,
+                 from main.c:2:
+huffman.c:13:31: warning: passing argument 3 of ‘insereh_fim’ makes pointer from integer without a cast [-Wint-conversion]
+   13 |         insereh_fim(arv, let, m, cv, freq); // criando a lista base inicial
+      |                               ^
+      |                               |
+      |                               char
+In file included from huffman.c:1,
+                 from huff_cript.c:1,
+                 from main.c:2:
+huffman.h:11:8: note: expected ‘char *’ but argument is of type ‘char’
+   11 | THuff *insereh_fim(THuff *huff, char *c, char *m, char *cv, float f);
+      |        ^~~~~~~~~~~
+In file included from huff_cript.c:1,
+                 from main.c:2:
+huffman.c:13:34: warning: passing argument 4 of ‘insereh_fim’ makes pointer from integer without a cast [-Wint-conversion]
+   13 |         insereh_fim(arv, let, m, cv, freq); // criando a lista base inicial
+      |                                  ^~
+      |                                  |
+      |                                  char
+In file included from huffman.c:1,
+                 from huff_cript.c:1,
+                 from main.c:2:
+huffman.h:11:8: note: expected ‘char *’ but argument is of type ‘char’
+   11 | THuff *insereh_fim(THuff *huff, char *c, char *m, char *cv, float f);
+      |        ^~~~~~~~~~~
+In file included from main.c:5:
+menus.c: In function ‘geranometabela’:
+menus.c:106:12: warning: returning ‘char *’ from a function with return type ‘char’ makes integer from pointer without a cast [-Wint-conversion]
+  106 |     return novoarq;
+      |            ^~~~~~~
+main.c: In function ‘main’:
+main.c:44:26: warning: passing argument 1 of ‘criab’ makes pointer from integer without a cast [-Wint-conversion]
+   44 |             arvb = criab(arq, t);
+      |                          ^~~
+      |                          |
+      |                          char
+In file included from b_cript.c:1,
+                 from main.c:3:
+b.c:3:17: note: expected ‘char *’ but argument is of type ‘char’
+    3 | TB *criab(char *arq, int t){ // cria a arv b inicial, com td o alfabeto
+      |           ~~~~~~^~~
+main.c:48:26: warning: passing argument 1 of ‘criah’ makes pointer from integer without a cast [-Wint-conversion]
+   48 |             arvh = criah(arq);
+      |                          ^~~
+      |                          |
+      |                          char
+In file included from huff_cript.c:1,
+                 from main.c:2:
+huffman.c:5:20: note: expected ‘char *’ but argument is of type ‘char’
+    5 | THuff *criah(char *arq){
+      |              ~~~~~~^~~
+main.c:92:21: warning: initialization of ‘char *’ from ‘char’ makes pointer from integer without a cast [-Wint-conversion]
+   92 |     char *novoarq = geranometabela(n);
+      |                     ^~~~~~~~~~~~~~
+main.c:94:21: warning: initialization of ‘char’ from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+   94 |     char velhoarq = novoarq;
+      |                     ^~~~~~~
+main.c:103:22: warning: passing argument 2 of ‘rm_Mai’ makes pointer from integer without a cast [-Wint-conversion]
+  103 |     rm_Mai(velhoarq, novoarq);
+      |                      ^~~~~~~
+      |                      |
+      |                      char
+In file included from main.c:4:
+rm.c:19:33: note: expected ‘char *’ but argument is of type ‘char’
+   19 | void rm_Mai(char* entrada,char* saida){
+      |                           ~~~~~~^~~~~
+main.c:105:21: warning: passing argument 1 of ‘novaarvh’ makes pointer from integer without a cast [-Wint-conversion]
+  105 |     arvh = novaarvh(novoarq, arvh); // libera arvh, cria nova arv baseada em novoarq e retorna a nova arv
+      |                     ^~~~~~~
+      |                     |
+      |                     char
+In file included from huff_cript.c:1,
+                 from main.c:2:
+huffman.c:75:23: note: expected ‘char *’ but argument is of type ‘char’
+   75 | THuff *novaarvh(char *arq, THuff *velha) {
+      |                 ~~~~~~^~~
+main.c:106:21: warning: passing argument 1 of ‘novaarvb’ makes pointer from integer without a cast [-Wint-conversion]
+  106 |     arvb = novaarvb(novoarq, arvb, t); // libera arvh, cria nova arv baseada em novoarq e retorna a nova arv
+      |                     ^~~~~~~
+      |                     |
+      |                     char
+In file included from b_cript.c:1,
+                 from main.c:3:
+b.c:135:20: note: expected ‘char *’ but argument is of type ‘char’
+  135 | TB *novaarvb(char *arq, TB *velha, int t) {
+      |              ~~~~~~^~~
+main.c:113:22: warning: passing argument 2 of ‘rm_vog’ makes pointer from integer without a cast [-Wint-conversion]
+  113 |     rm_vog(velhoarq, novoarq);
+      |                      ^~~~~~~
+      |                      |
+      |                      char
+In file included from main.c:4:
+rm.c:45:33: note: expected ‘char *’ but argument is of type ‘char’
+   45 | void rm_vog(char* entrada,char* saida){
+      |                           ~~~~~~^~~~~
+main.c:115:21: warning: passing argument 1 of ‘novaarvh’ makes pointer from integer without a cast [-Wint-conversion]
+  115 |     arvh = novaarvh(novoarq, arvh); // libera arvh, cria nova arv baseada em novoarq e retorna a nova arv
+      |                     ^~~~~~~
+      |                     |
+      |                     char
+In file included from huff_cript.c:1,
+                 from main.c:2:
+huffman.c:75:23: note: expected ‘char *’ but argument is of type ‘char’
+   75 | THuff *novaarvh(char *arq, THuff *velha) {
+      |                 ~~~~~~^~~
+main.c:116:21: warning: passing argument 1 of ‘novaarvb’ makes pointer from integer without a cast [-Wint-conversion]
+  116 |     arvb = novaarvb(novoarq, arvb, t); // libera arvh, cria nova arv baseada em novoarq e retorna a nova arv
+      |                     ^~~~~~~
+      |                     |
+      |                     char
+In file included from b_cript.c:1,
+                 from main.c:3:
+b.c:135:20: note: expected ‘char *’ but argument is of type ‘char’
+  135 | TB *novaarvb(char *arq, TB *velha, int t) {
+      |              ~~~~~~^~~
+main.c:123:22: warning: passing argument 2 of ‘rm_con’ makes pointer from integer without a cast [-Wint-conversion]
+  123 |     rm_con(velhoarq, novoarq);
+      |                      ^~~~~~~
+      |                      |
+      |                      char
+In file included from main.c:4:
+rm.c:6:33: note: expected ‘char *’ but argument is of type ‘char’
+    6 | void rm_con(char* entrada,char* saida){
+      |                           ~~~~~~^~~~~
+main.c:125:21: warning: passing argument 1 of ‘novaarvh’ makes pointer from integer without a cast [-Wint-conversion]
+  125 |     arvh = novaarvh(novoarq, arvh); // libera arvh, cria nova arv baseada em novoarq e retorna a nova arv
+      |                     ^~~~~~~
+      |                     |
+      |                     char
+In file included from huff_cript.c:1,
+                 from main.c:2:
+huffman.c:75:23: note: expected ‘char *’ but argument is of type ‘char’
+   75 | THuff *novaarvh(char *arq, THuff *velha) {
+      |                 ~~~~~~^~~
+main.c:126:21: warning: passing argument 1 of ‘novaarvb’ makes pointer from integer without a cast [-Wint-conversion]
+  126 |     arvb = novaarvb(novoarq, arvb, t); // libera arvh, cria nova arv baseada em novoarq e retorna a nova arv
+      |                     ^~~~~~~
+      |                     |
+      |                     char
+In file included from b_cript.c:1,
+                 from main.c:3:
+b.c:135:20: note: expected ‘char *’ but argument is of type ‘char’
+  135 | TB *novaarvb(char *arq, TB *velha, int t) {
+      |              ~~~~~~^~~
+main.c:139:24: warning: passing argument 2 of ‘rm_dupla’ makes pointer from integer without a cast [-Wint-conversion]
+  139 |     rm_dupla(velhoarq, novoarq, clas2, clas1);
+      |                        ^~~~~~~
+      |                        |
+      |                        char
+In file included from main.c:4:
+rm.c:57:36: note: expected ‘char *’ but argument is of type ‘char’
+   57 | void rm_dupla(char* entrada, char* saida, char cv, char mm){
+      |                              ~~~~~~^~~~~
+main.c:141:21: warning: passing argument 1 of ‘novaarvh’ makes pointer from integer without a cast [-Wint-conversion]
+  141 |     arvh = novaarvh(novoarq, arvh); // libera arvh, cria nova arv baseada em novoarq e retorna a nova arv
+      |                     ^~~~~~~
+      |                     |
+      |                     char
+In file included from huff_cript.c:1,
+                 from main.c:2:
+huffman.c:75:23: note: expected ‘char *’ but argument is of type ‘char’
+   75 | THuff *novaarvh(char *arq, THuff *velha) {
+      |                 ~~~~~~^~~
+main.c:142:21: warning: passing argument 1 of ‘novaarvb’ makes pointer from integer without a cast [-Wint-conversion]
+  142 |     arvb = novaarvb(novoarq, arvb, t); // libera arvh, cria nova arv baseada em novoarq e retorna a nova arv
+      |                     ^~~~~~~
+      |                     |
+      |                     char
+In file included from b_cript.c:1,
+                 from main.c:3:
+b.c:135:20: note: expected ‘char *’ but argument is of type ‘char’
+  135 | TB *novaarvb(char *arq, TB *velha, int t) {
+      |              ~~~~~~^~~
+main.c:180:35: warning: passing argument 2 of ‘alterafreqh’ makes pointer from integer without a cast [-Wint-conversion]
+  180 |     arvh = alterafreqh(arvh, lista->letra, lista->freq);
+      |                              ~~~~~^~~~~~~
+      |                                   |
+      |                                   char
+In file included from huff_cript.c:1,
+                 from main.c:2:
+huffman.c:125:38: note: expected ‘char *’ but argument is of type ‘char’
+  125 | THuff *alterafreqh(THuff *arv, char *l, float f) {
+      |                                ~~~~~~^
